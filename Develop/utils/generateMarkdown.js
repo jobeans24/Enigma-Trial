@@ -36,62 +36,46 @@ This project is licensed under the ${license} license.`;
     }
 }
 
+function generateMarkdown(data) {
+    return `
+# ${data.title}
+${renderLicenseBadge(data.license)}
+
+## Description
+${data.description}
+
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+${renderLicenseLink(data.license)}
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+
+## Installation
+${data.installation}
+
+## Usage
+${data.usage}
+
+${renderLicenseSection(data.license)}
+
+## Contributing
+${data.contributing}
+
+## Tests
+${data.tests}
+
+## Questions
+If you have any questions, you can contact me through my GitHub profile or email address below.
+* GitHub: ${data.github}
+* Email: ${data.email}
+`;
+}
+
+
 
 // If there is no license, return an empty string
-
-inquirer.prompt([
-    {
-        type: 'input',
-        name: 'title',
-        message: 'Enter the title of your project:',
-    },
-    {
-        type: 'input',
-        name: 'description',
-        message: 'Enter a description of your project:',
-    },
-    {
-        type: 'input',
-        name: 'installation',
-        message: 'Enter the installation instructions:',
-    },
-    {
-        type: 'input',
-        name: 'usage',
-        message: 'Enter the usage information:',
-    },
-    {
-        type: 'list',
-        name: 'license',
-        message: 'Choose a license for your project:',
-        choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3', 'None'],
-    },
-    {
-        type: 'input',
-        name: 'contributing',
-        message: 'Enter the contributing guidelines:',
-    },
-    {
-        type: 'input',
-        name: 'tests',
-        message: 'Enter the test instructions:',
-    },
-    {
-        type: 'input',
-        name: 'email',
-        message: 'Enter your email address:',
-    },
-    {
-        type: 'input',
-        name: 'github',
-        message: 'Enter your GitHub username:',
-    },
-])
-    .then((data) => {
-        const markdown = generateMarkdown(data);
-        writeToFile('README.md', markdown);
-    });
-
 
 
 module.exports = generateMarkdown;

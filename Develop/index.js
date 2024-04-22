@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');    
 const fs = require('fs');
-const { renderLicenseBadge, renderLicenseLink, renderLicenseSection } = require('./generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
 //TODO: Create an array of questions for user input
 const questions = [];
@@ -12,47 +12,6 @@ const writeToFile = (fileName, data) => {
         err ? console.error(err) : console.log('Success! Your README.md file has been generated')
     );
 }
-
-// Create a code that will form the layout in which the README will be displayed
-const generateMarkdown = (data) => {
-    return `
-# ${data.title}
-![License](https://img.shields.io/badge/License-${data.license}-blue.svg)
-
-## Description
-${data.description}
-
-## Table of Contents
-* [Installation](#installation)
-* [Usage](#usage)
-${renderLicenseLink(data.license)}
-* [Contributing](#contributing)
-* [Tests](#tests)
-* [Questions](#questions)
-
-## Installation
-${data.installation}
-
-## Usage
-${data.usage}
-
-${renderLicenseSection(data.license)}
-
-## Contributing
-${data.contributing}
-
-## Tests
-${data.tests}
-
-## Questions
-If you have any questions, you can contact me through my GitHub profile or email address below.
-* GitHub: [${data.github}](
-* Email: ${data.email}
-`;
-}
-
-
-
 
 
 // TODO: Create a function to initialize app
