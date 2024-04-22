@@ -27,4 +27,8 @@ SO THAT I can quickly create a professional README for a new project
  This command-line application allows users to create a professional README.md file that fits the application in which they are making. The README with have multiple sections created as well as 
 
  ## Video Presentation
+ The Link provided will take you to a Youtube video that I created that shows the use of the README Generator and how it works:
  
+[![README Generator Preview](https://www.youtube.com/watch?v=H73zAVmq8Cc)](https://www.youtube.com/watch?v=H73zAVmq8Cc)
+ 
+

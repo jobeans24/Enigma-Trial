@@ -1,9 +1,9 @@
 
-# Fauna
-![License](https://img.shields.io/badge/License-GPL 3.0-blue.svg)
+# README Generator
+![License](https://img.shields.io/badge/License-BSD 3-blue.svg)
 
 ## Description
-The idea of plants and animals, mostly the idea of fairies
+This project allows users to generate a professionally formulated README file with on js
 
 ## Table of Contents
 * [Installation](#installation)
@@ -14,21 +14,21 @@ The idea of plants and animals, mostly the idea of fairies
 * [Questions](#questions)
 
 ## Installation
-sidfgvp;fv
+all commands will be done within terminal on the command line and the npm  i will need to be installed as well
 
 ## Usage
-asufvpiquvc
+used to all coders to generate a properly formatted readme without having to work through the layout on the readme file
 
 ## License
-This project is licensed under the GPL 3.0 license.
+This project is licensed under the BSD 3 license.
 
 ## Contributing
-siuehv[fuv
+I am unsure
 
 ## Tests
-sdifbviubfrv
+the test instructions are to be determined
 
 ## Questions
 If you have any questions, you can contact me through my GitHub profile or email address below.
-* GitHub: [idsbviuf](
-* Email: bviuf
+* GitHub: jobeans
+* Email: josiezobel@gmail.com
