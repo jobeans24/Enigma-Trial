@@ -10,7 +10,7 @@ function writeToFile(fileName, data) {
         if (err) {
             console.error(err);
             return;
-        }
+        } 
         console.log('README file has been created!');
     });
     

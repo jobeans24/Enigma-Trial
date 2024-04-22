@@ -24,4 +24,4 @@ SO THAT I can quickly create a professional README for a new project
 
 ## Description
 
-    This command-line application allows users to create a professional README.md file that fits the application in which they are making
+ This command-line application allows users to create a professional README.md file that fits the application in which they are making
