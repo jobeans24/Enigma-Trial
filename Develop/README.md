@@ -20,5 +20,5 @@
     ## Tests
     undefined
     ## Questions
-    If you have any questions, please reach out to me at undefined or visit my [GitHub](undefined) for more information.
+    If you have any questions, please reach out to me at undefined or visit my GitHub profile at [undefined](undefined).
     
